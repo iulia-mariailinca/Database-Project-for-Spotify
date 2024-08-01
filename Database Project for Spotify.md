@@ -29,7 +29,7 @@ Database description: **This Spotify database is designed to manage and organise
 
 <li>Database Queries</li><br>
 <ol type="a">
-    <li>Database Queries can be observed here: </li>
+    <li>Database Queries can be observed here: https://github.com/iulia-mariailinca/Database-Project-for-Spotify/blob/main/Spotify%20DB%20-%20Ilinca%20Iulia.sql</li>
 </ol>
 <br>
 
