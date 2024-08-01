@@ -8,7 +8,7 @@ Tools used: MySQL Workbench
 
 Database description: **This Spotify database is designed to manage and organise multiple aspects of a music streaming service, including information about users, artists, albums, songs, playlists, and the relationships between these entities.**
 
-<o>
+<ol>
 <li> Database Schema </li>
 <br>   
    You can find below the database schema that was generated through Reverse Engineer and which contains all the tables and the relationships between them.
@@ -28,7 +28,15 @@ Database description: **This Spotify database is designed to manage and organise
    </ul> <br>
 
 <li>Database Queries</li><br>
+<ol type="a">
+    <li>Database Queries can be observed here: </li>
+</ol>
+<br>
 
-<li>Database Queries can be observed here: </li>
+<li>Conclusions</li>
+
+**Inserati aici o concluzie cu privire la ceea ce ati lucrat, gen lucrurile pe care le-ati invatat, lessons learned, un rezumat asupra a ceea ce ati facut si orice alta informatie care vi se pare relevanta pentru o concluzie finala asupra a ceea ce ati lucrat**
+
+</ol>
   
   
