@@ -26,3 +26,19 @@ Database description: **This Spotify database is designed to manage and organise
    <li>e) **Songs** is connected with **PlaylistSongs** through a N relationship which was implemented through                                                
      **Songs.SongID** as a primary key and **PlaylistSongs.SongID** as a foreign key.</li>
    </ul> <br>
+
+<li>Database Queries</li><br>
+
+<ol type="a">
+  <li>DDL (Data Definition Language)</li>
+
+  The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS)
+  CREATE TABLE Users (
+    UserID INT PRIMARY KEY,
+    UserName VARCHAR(100),
+    UserAge INT,                 -- Această tabelă stochează informațiile despre utilizatorii aplicației Spotify, inclusiv ID-ul unic, numele, vârsta, emailul și tipul de abonament.
+    Email VARCHAR(100),
+    SubscriptionType VARCHAR(50)
+);
+  
+  
