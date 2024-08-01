@@ -15,14 +15,14 @@ Database description: **This Spotify database is designed to manage and organise
    
    The tables are connected in the following way:
    <ul>
-   a) **Artists** is connected with **Albums** through a 1 relationship which was implemented through                                                          
-     **Artists.ArtistID** as a primary key and **Albums.ArtistID** as a foreign key.
-   b) **Albums** is connected with **Songs** through a 1 relationship which was implemented through                                                     
-     **Albums.AlbumID** as a primary key and **Songs.AlbumID** as a foreign key.
-   c) **Users** is connected with **Playlists** through a 1 relationship which was implemented through                                                        
-     **Users.UserID** as a primary key and **Playlists.UserID** as a foreign key.
-   d) **Playlists** is connected with **PlaylistSongs** through a N relationship which was implemented through                                            
-     **Playlists.PlaylistID** as a primary key and **PlaylistSongs.PlaylistID** as a foreign key.
-   e) **Songs** is connected with **PlaylistSongs** through a N relationship which was implemented through                                                
-     **Songs.SongID** as a primary key and **PlaylistSongs.SongID** as a foreign key.
+   <li>a) **Artists** is connected with **Albums** through a 1 relationship which was implemented through                                                          
+     **Artists.ArtistID** as a primary key and **Albums.ArtistID** as a foreign key. </li>
+   <li>b) **Albums** is connected with **Songs** through a 1 relationship which was implemented through                                                     
+     **Albums.AlbumID** as a primary key and **Songs.AlbumID** as a foreign key.</li>
+   <li>c) **Users** is connected with **Playlists** through a 1 relationship which was implemented through                                                        
+     **Users.UserID** as a primary key and **Playlists.UserID** as a foreign key.</li>
+   <li>d) **Playlists** is connected with **PlaylistSongs** through a N relationship which was implemented through                                            
+     **Playlists.PlaylistID** as a primary key and **PlaylistSongs.PlaylistID** as a foreign key.</li>
+   <li>e) **Songs** is connected with **PlaylistSongs** through a N relationship which was implemented through                                                
+     **Songs.SongID** as a primary key and **PlaylistSongs.SongID** as a foreign key.</li>
    </ul> <br>
