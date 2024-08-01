@@ -8,9 +8,13 @@ Tools used: MySQL Workbench
 
 Database description: **This Spotify database is designed to manage and organise multiple aspects of a music streaming service, including information about users, artists, albums, songs, playlists, and the relationships between these entities.**
 
-1. Database Schema
+<o>
+<li> Database Schema </li>
+<br>   
    You can find below the database schema that was generated through Reverse Engineer and which contains all the tables and the relationships between them.
+   
    The tables are connected in the following way:
+   <ul>
    a) **Artists** is connected with **Albums** through a 1 relationship which was implemented through                                                          
      **Artists.ArtistID** as a primary key and **Albums.ArtistID** as a foreign key.
    b) **Albums** is connected with **Songs** through a 1 relationship which was implemented through                                                     
@@ -21,3 +25,4 @@ Database description: **This Spotify database is designed to manage and organise
      **Playlists.PlaylistID** as a primary key and **PlaylistSongs.PlaylistID** as a foreign key.
    e) **Songs** is connected with **PlaylistSongs** through a N relationship which was implemented through                                                
      **Songs.SongID** as a primary key and **PlaylistSongs.SongID** as a foreign key.
+   </ul> <br>
