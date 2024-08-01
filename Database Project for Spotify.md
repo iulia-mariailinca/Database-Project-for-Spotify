@@ -35,7 +35,7 @@ Database description: **This Spotify database is designed to manage and organise
 
 <li>Conclusions</li>
 
-**Inserati aici o concluzie cu privire la ceea ce ati lucrat, gen lucrurile pe care le-ati invatat, lessons learned, un rezumat asupra a ceea ce ati facut si orice alta informatie care vi se pare relevanta pentru o concluzie finala asupra a ceea ce ati lucrat**
+**As a conclusion, his project provided a deep understanding of how to design and manage a database for a complex application like Spotify. I have acquired essential skills in data modeling, defining relationships and efficient data manipulation, all of which are critical to the success of any database-based system.**
 
 </ol>
   
