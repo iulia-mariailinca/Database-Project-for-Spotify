@@ -29,23 +29,6 @@ Database description: **This Spotify database is designed to manage and organise
 
 <li>Database Queries</li><br>
 
-<ol type="a">
-  <li>DDL (Data Definition Language)</li>
-
-   The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS):
-
-  **CREATE database Spotify**
-  **CREATE table Users
-
-  After the database and the tables have been created, a few ALTER instructions were written in order to update the structure of the database, as described below:
-
-  **Inserati aici toate instructiunile de ALTER pe care le-ati scris. Incercati sa includeti instructiuni cat mai variate cum ar fi:**
- **- schimbare nume tabela**
- **- adaugare sau stergere coloana**
- **- redenumire coloana**
- **- adaugare proprietati coloana (ex: adaugare auto-increment)**
- **- modificare proprietati coloana (ex: modificare tip de data, modificare pozitie coloana etc)**
- **- adaugare cheie primara sau secundara (daca nu a fost deja adaugata la crearea tabelei)**
- 
+<li>Database Queries can be observed here: </li>
   
   
