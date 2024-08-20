@@ -68,7 +68,41 @@ Database description: **This Spotify database is designed to manage and organise
        - AND, OR filter; <br>
        - Aggregate functions; <br>
        - Filtering on Aggregate functions; <br>
-       - JOINS: INNER JOIN between Artists and Albums, LEFT JOIN between Users and Playlists, RIGHT JOIN between Albums and Songs and CROSS JOIN between Users and Songs; <br>
+   <br>
+       - JOINS: <br>
+   <br>
+       a) INNER JOIN between Artists and Albums <br>
+       Explanation: <br>
+       **Artists**: The table containing information about all artists. <br>
+       **Albums**: The table containing information about all albums. <br>
+       **INNER JOIN**: This operation matches records from both tables where the ArtistID in the Albums table corresponds to the ArtistID in the Artists table. Only albums that have a valid artist relationship will be included in the result. <br>
+   <br>
+       **The Business Purpose** of this JOIN: Music Discovery - Facilitating music discovery features that connect users with artists and their complete discography, including all valid albums. <br>
+       <br>
+       b) LEFT JOIN between Users and Playlists <br>
+       Explanation: <br>
+       **Users**: The main table in the query, containing information about all users. <br>
+       **Playlists**: The associated table, which contains the playlist information. <br>
+       **LEFT JOIN**: Returns all rows in the Users table, even if there is no match in the Playlists table. If a user has no playlist, the PlaylistID and PlaylistName fields will be NULL. <br>
+   <br>
+       **The Business Purpose** of this JOIN: This JOIN is essential to generate reports and analytics that identify users without playlists, to better understand user behavior and take action to increase engagement. <br>
+       <br>
+       c) RIGHT JOIN between Albums and Songs <br>
+       Explanation: <br>
+       **Albums**: The secondary table in the query, containing information about albums. <br>
+       **Songs**: The primary table in the query, containing information about songs. <br>
+       **RIGHT JOIN**: Returns all rows from the Songs table, even if there is no corresponding entry in the Albums table. If a song is not associated with any album, the AlbumID and AlbumName fields will be NULL. <br>
+   <br>
+       **The Business Purpose** of this JOIN: This JOIN is useful for reporting, product teams can use this data to identify and fix missing associations between songs and albums, thereby improving the user experience. <br>
+       <br>
+       d) CROSS JOIN between Users and Songs <br>
+       Explanation: <br>
+       **Users**: The table containing information about all users. <br>
+       **Songs**: The table containing information about all songs. <br>
+       **CROSS JOIN**: This operation combines each user with every song. <br>
+   <br>
+       **The Business Purpose** of this JOIN: Generating all possible user-song pairs can be helpful for testing recommendation algorithms or understanding the user's preferences. <br>
+   <br>
        - LIMITS; <br>
        - ORDER BY; <br>
        - Bonus: Subquery - selecting all the french artists from the Artists. <br>
