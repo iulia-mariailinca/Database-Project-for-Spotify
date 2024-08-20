@@ -101,7 +101,7 @@ SET SongName = 'In the End' WHERE SongID = 13;    -- Actualizarea unei melodii
 SELECT * FROM Artists;  -- Selectarea tuturor artiștilor
 
 -- 2. Selectarea câtorva coloane
-SELECT SongID, SongName, AlbumID FROM Songs; -- Selectarea ID-ului și numelui cântecelor
+SELECT SongID, SongName, AlbumID FROM Songs; -- Selectarea ID-ului și numelui cântecelor, dar si ID-ului albumelor
 
 -- 3. Filtrarea cu WHERE
 SELECT * FROM Artists WHERE Country = 'France';  -- Selectarea artiștilor din Franța
@@ -151,12 +151,8 @@ SELECT * FROM Artists ORDER BY ArtistName DESC; -- Selectarea artiștilor ordona
 /* Subquery */
 SELECT ArtistName
 FROM Artists
-WHERE ArtistID IN (
-    SELECT ArtistID
-    FROM Artists                     -- Selectarea artiștilor francezi din lista de artiști
-    WHERE ArtistID IN (
-        SELECT ArtistID
-        FROM Artists
-        WHERE Country = 'France'
-    )
-);
+WHERE ArtistID IN(                  -- Selectarea artiștilor francezi din lista de artiști
+      SELECT ArtistID
+      FROM Artists
+      WHERE Country = 'France'
+      )
