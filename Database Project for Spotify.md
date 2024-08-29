@@ -11,6 +11,7 @@ Database description: **This Spotify database is designed to manage and organise
 ## Database Schema
 
 You can find below the database schema that was generated through Reverse Engineer and which contains all the tables and the relationships between them.
+![image](https://github.com/user-attachments/assets/885da799-63d2-464b-ab7b-0cf77744a10e)
 
 
 
