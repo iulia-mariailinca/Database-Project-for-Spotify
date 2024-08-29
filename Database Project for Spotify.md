@@ -15,33 +15,55 @@ You can find below the database schema that was generated through Reverse Engine
 
 
 
-The tables are connected in the following way:<br>
-a) **Artists** is connected with **Albums** through a 1 relationship which was implemented through **Artists.ArtistID** as a primary key and **Albums.ArtistID** as a foreign key. <br>
-b) **Albums** is connected with **Songs** through a 1 relationship which was implemented through **Albums.AlbumID** as a primary key and **Songs.AlbumID** as a foreign key.<br>
-c) **Users** is connected with **Playlists** through a 1 relationship which was implemented through **Users.UserID** as a primary key and **Playlists.UserID** as a foreign key.<br>
-d) **Playlists** is connected with **PlaylistSongs** through a N relationship which was implemented through **Playlists.PlaylistID** as a primary key and **PlaylistSongs.PlaylistID** as a foreign key.<br>
-e) **Songs** is connected with **PlaylistSongs** through a N relationship which was implemented through **Songs.SongID** as a primary key and **PlaylistSongs.SongID** as a foreign key.<br>
+The tables are connected in the following way:<br><br>
+a) **Artists** is connected with **Albums** through a 1 relationship which was implemented through **Artists.ArtistID** as a primary key and **Albums.ArtistID** as a foreign key. <br><br>
+b) **Albums** is connected with **Songs** through a 1 relationship which was implemented through **Albums.AlbumID** as a primary key and **Songs.AlbumID** as a foreign key.<br><br>
+c) **Users** is connected with **Playlists** through a 1 relationship which was implemented through **Users.UserID** as a primary key and **Playlists.UserID** as a foreign key.<br><br>
+d) **Playlists** is connected with **PlaylistSongs** through a N relationship which was implemented through **Playlists.PlaylistID** as a primary key and **PlaylistSongs.PlaylistID** as a foreign key.<br><br>
+e) **Songs** is connected with **PlaylistSongs** through a N relationship which was implemented through **Songs.SongID** as a primary key and **PlaylistSongs.SongID** as a foreign key.<br><br>
      
 
 ## Database Queries</li><br>
 
-Database Queries can be observed here: https://github.com/iulia-mariailinca/Database-Project-for-Spotify/blob/main/Spotify%20DB%20-%20Ilinca%20Iulia.sql, but I will also write a few words about what was done there in the sections below.
-
+Database Queries can be observed [here](https://github.com/iulia-mariailinca/Database-Project-for-Spotify/blob/main/Spotify%20DB%20-%20Ilinca%20Iulia.sql), but I will also write a few words about what was done there in the sections below.
    
 ### DDL (Data Definition Language): <br>
-      The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS): <br>
-      - CREATE DATABASE Spotify <br>
-      - CREATE TABLE 'Users' <br>
-      - CREATE TABLE 'Artists' <br>
-      - CREATE TABLE 'Albums' <br>
-      - CREATE TABLE 'Songs' <br>
-      - CREATE TABLE 'Playlists' <br>
-      - CREATE TABLE 'PlaylistSongs' <br>
-     After the database and the tables have been created, an ALTER instruction was written in order to update the structure of the database, as described below: <br>
-     - ALTER TABLE 'Artists' ADD 'Country' VARCHAR (100), which is a column added to store the origin country of the artists. <br>
-   <br>
+
+The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS):
+
+```
+CREATE DATABASE Spotify 
+```
+
+```
+CREATE TABLE 'Users'
+```
+```
+CREATE TABLE 'Artists'
+```
+```
+CREATE TABLE 'Albums'
+```
+```
+CREATE TABLE 'Songs'
+```
+```
+CREATE TABLE 'Playlists'
+```
+```
+CREATE TABLE 'PlaylistSongs'
+```
+
+After the database and the tables have been created, an ALTER instruction was written in order to update the structure of the database, as described below:
+
+```
+ALTER TABLE 'Artists' ADD 'Country' VARCHAR (100)
+```
+
+The new column called Country is added to store the origin country of the artists. 
 
 ### DML (Data Manipulation Language): <br>
+
        In order to be able to use the database I populated the tables with various data necessary in order to perform queries and manipulate the data. <br> 
        In the testing process, this necessary data is identified in the Test Design phase and created in the Test Implementation phase. <br>
        Below you can find all the insert instructions that were created in the scope of this project: <br>
