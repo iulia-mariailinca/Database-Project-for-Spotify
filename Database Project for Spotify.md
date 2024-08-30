@@ -33,26 +33,59 @@ Database Queries can be observed [here](https://github.com/iulia-mariailinca/Dat
 The following instructions were written in the scope of CREATING the structure of the database (CREATE INSTRUCTIONS):
 
 ```
-CREATE DATABASE Spotify 
+CREATE DATABASE Spotify; 
 ```
 
 ```
-CREATE TABLE 'Users'
+CREATE TABLE Users (
+    UserID INT PRIMARY KEY,
+    UserName VARCHAR(100),
+    UserAge INT,                
+    Email VARCHAR(100),
+    SubscriptionType VARCHAR(50)
+);
 ```
 ```
-CREATE TABLE 'Artists'
+CREATE TABLE Artists (
+    ArtistID INT PRIMARY KEY,
+    ArtistName VARCHAR(100),      
+    Genre VARCHAR(50)
+);
 ```
 ```
-CREATE TABLE 'Albums'
+CREATE TABLE Albums (
+    AlbumID INT PRIMARY KEY,
+    AlbumName VARCHAR(100),
+    ReleaseDate DATE,             
+    ArtistID INT,
+    FOREIGN KEY (ArtistID) REFERENCES Artists(ArtistID)
+);
 ```
 ```
-CREATE TABLE 'Songs'
+CREATE TABLE Songs (
+    SongID INT PRIMARY KEY,
+    SongName VARCHAR(100),
+    Duration INT,                  
+    AlbumID INT,
+    FOREIGN KEY (AlbumID) REFERENCES Albums(AlbumID)
+);
 ```
 ```
-CREATE TABLE 'Playlists'
+CREATE TABLE Playlists (
+    PlaylistID INT PRIMARY KEY,
+    PlaylistName VARCHAR(100),      
+    UserID INT,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);
 ```
 ```
-CREATE TABLE 'PlaylistSongs'
+CREATE TABLE PlaylistSongs (
+    PlaylistID INT,
+    SongID INT,
+    PRIMARY KEY (PlaylistID, SongID),   
+    FOREIGN KEY (PlaylistID) REFERENCES Playlists(PlaylistID),
+    FOREIGN KEY (SongID) REFERENCES Songs(SongID)
+    );
 ```
 
 After the database and the tables have been created, an ALTER instruction was written in order to update the structure of the database, as described below:
